@@ -1,0 +1,180 @@
+/* ===== BODY STYLING ===== */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9fafc;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+.text-center {
+   margin-top: 20px;
+}
+/* ===== SUBMIT AREA ===== */
+.submit-area {
+    width: 100%;
+    max-width: 600px;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 0px;
+    padding: 40px;
+    border-radius: 12px;
+    background-color: #fff;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+/* ===== DASHBOARD AREA ===== */
+#dashboard-area {
+    min-height: 30vh;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+/* Container padding */
+#dashboard-area .container {
+    padding: 20px;
+}
+
+/* ===== STATUS CARDS ===== */
+.status {
+    padding: 25px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+    border-radius: 1rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+/* Hover effect for cards */
+.status:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+/* Titles */
+.status h5 {
+    color: #6c757d;
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+/* Values */
+.status h2 {
+    font-weight: 700;
+    font-size: 2rem;
+    margin: 0;
+}
+
+/* Color Accents */
+.deposit h2 {
+    color: #28a745;
+}
+
+.withdraw h2 {
+    color: #dc3545;
+}
+
+.balance h2 {
+    color: #007bff;
+}
+
+/* ===== TRANSACTION AREA ===== */
+#transaction-area {
+    padding: 50px 20px;
+    width: 100%;
+}
+
+/* Transaction box */
+.transaction-box {
+    background-color: #ffffff;
+    padding: 35px;
+    border-radius: 1rem;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover animation */
+.transaction-box:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Headings */
+.transaction-box h3 {
+    font-weight: 600;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+/* Input fields */
+.transaction-box input[type="text"] {
+    height: 48px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px 15px;
+    width: 100%;
+    margin-bottom: 20px;
+    transition: border-color 0.3s ease;
+}
+
+.transaction-box input[type="text"]:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Buttons */
+.transaction-box button {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    font-weight: 500;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.transaction-box button:hover {
+    opacity: 0.9;
+    transform: scale(1.01);
+}
+
+/* Button colors (example) */
+.transaction-box .btn-success {
+    background-color: #28a745;
+    color: #fff;
+}
+
+.transaction-box .btn-danger {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+/* ===== RESPONSIVENESS ===== */
+@media (max-width: 767.98px) {
+    .submit-area {
+        width: 90%;
+        padding: 30px;
+    }
+
+    .status {
+        padding: 20px;
+    }
+
+    .transaction-box {
+        padding: 25px;
+    }
+
+    .transaction-box h3 {
+        font-size: 1.25rem;
+    }
+}
